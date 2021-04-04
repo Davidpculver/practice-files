@@ -47,3 +47,30 @@
 // }
 // console.log("You quit the app.")
 
+
+// Write a function, filterNumbers() that takes in an array of mixed data types and returns an array of only the numbers type in ascencding order.
+
+function filterNumbers(input) {
+    var array = [];
+    for(var i = 0; i < input.length; i++){
+        if(typeof input[i] === 'number'){
+           array.push(input[i]);
+        }
+        array.sort(function (a, b) {
+            return a - b;
+        });
+    }
+    console.log(array);
+}
+
+filterNumbers([100, "puppy" , 10000, , true, 1]);
+
+
+
+
+
+
+
+
+
+
