@@ -49,21 +49,102 @@
 
 
 // Write a function, filterNumbers() that takes in an array of mixed data types and returns an array of only the numbers type in ascencding order.
+//
+// function filterNumbers(input) {
+//     var array = [];
+//     for(var i = 0; i < input.length; i++){
+//         if(typeof input[i] === 'number'){
+//            array.push(input[i]);
+//         }
+//         array.sort(function (a, b) {
+//             return a - b;
+//         });
+//     }
+//     console.log(array);
+// }
+//
+// filterNumbers([100, "puppy" , 10000, , true, 1]);
 
-function filterNumbers(input) {
-    var array = [];
-    for(var i = 0; i < input.length; i++){
-        if(typeof input[i] === 'number'){
-           array.push(input[i]);
-        }
-        array.sort(function (a, b) {
-            return a - b;
-        });
+// var dogs = [
+//     {
+//         name: "Chompers",
+//         breed: "Pug",
+//         age: 7
+//     },
+//     {
+//         name: "Freddy",
+//         breed: "Lab",
+//         age: 4
+//     },
+//     {
+//         name: "Mr. Pig",
+//         breed: "Mastif",
+//         age: 10
+//     }
+// ]
+//
+// function getOlder() {
+//     dogs.forEach(function (dogAge) {
+//        dogAge.age = dogAge.age + 1;
+//         console.log(dogAge);
+//     })
+//
+// }
+//
+// getOlder();
+
+var cars = [
+    {
+        make: 'Volvo',
+        color: 'red',
+        year: 1996,
+        isDirty: true
+    },
+    {
+        make: 'Toyota',
+        color: 'black',
+        year: 2004,
+        isDirty: false
+    },
+    {
+        make: 'Ford',
+        color: 'white',
+        year: 2007,
+        isDirty: true
     }
-    console.log(array);
+]
+
+
+function washCars() {
+    cars.forEach(function (dirtyCar) {
+        if(dirtyCar.isDirty === true){
+            dirtyCar.isDirty = dirtyCar.isDirty === false;
+        }
+    })
+    console.log(cars);
 }
 
-filterNumbers([100, "puppy" , 10000, , true, 1]);
+washCars();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
