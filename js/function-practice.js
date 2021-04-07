@@ -230,15 +230,19 @@
 
 // Exercise 58
 // Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
-function firstAndLast(input) {
-    return input[0][input.length -1];
-}
-
-console.log(firstAndLast("pizza"))
+// function firstAndLast(input) {
+//     return [input[0], input[input.length-1]];
+// }
+// console.log(firstAndLast([1, 2, 3, 4, 5]))
 
 // Exercise 59
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
+function firstToLast(input) {
+    var firstItem = input.shift();
+    return [input, input.push(firstItem)];
+}
 
+console.log(firstToLast([1, 2, 3, 4]))
 
 // Exercise 60
 // Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
