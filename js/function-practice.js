@@ -176,25 +176,72 @@
 //
 // console.log(doMath("-", 300, 75));
 
+// Exercise 51
+// Write a function definition named second that takes in sequence and returns the second value of that sequence.
+// function second(input){
+//     return input[1];
+// }
+//
+// console.log(second(["order", 'pizza', 'now']));
 
 
 
+// Exercise 52
+// Write a function definition named third that takes in sequence and returns the third value of that sequence.
+// function third(input) {
+//     return input[2];
+// }
+//
+//
+//
+// // Exercise 53
+// // Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
+// function forth(input) {
+//     return input[3];
+// }
+//
+//
+//
+// // Exercise 54
+// // Write a function definition named last that takes in sequence and returns the last value of
+// function last(input) {
+//     return input[input.length-1];
+// }
+
+// Exercise 55
+// Write a function definition named secondToLast that takes in sequence and returns the second to last value of that sequence.
+// function secondToLast(input) {
+//     return input[input.length-2];
+// }
+//
+//
+// // Exercise 56
+// // Write a function definition named thirdToLast that takes in sequence and returns the third to last value of that sequence.
+// function thirdToLast(input) {
+//     return input[input.length-3];
+// }
+
+// Exercise 57
+// Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
+// function firstAndSecond(input) {
+//     return input.slice(0, 2);
+// }
 
 
+// Exercise 58
+// Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+function firstAndLast(input) {
+    return input[0][input.length -1];
+}
+
+console.log(firstAndLast("pizza"))
+
+// Exercise 59
+// Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// Exercise 60
+// Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
 
 
 
