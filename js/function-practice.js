@@ -237,21 +237,28 @@
 
 // Exercise 59
 // Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
-function firstToLast(input) {
-    var firstItem = input.shift();
-    return [input, input.push(firstItem)];
-}
-
-console.log(firstToLast([1, 2, 3, 4]))
+// function firstToLast(input) {
+//     var firstItem = input.shift();
+//     return [input, input.push(firstItem)];
+// }
+//
+// console.log(firstToLast([1, 2, 3, 4]))
 
 // Exercise 60
 // Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
 
 
 
+var newArray = [];
+function allIndexesOf(array, value) {
+    for(var i = 0; i < array.length; i++){
+        if(value === array[i]){
+          newArray.push(i);
+        }
+    } console.log(newArray)
+}
 
-
-
+allIndexesOf(['apple', 'banana', 'orange', 'apple', 'pineapple'], 'apple')
 
 
 
