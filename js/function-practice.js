@@ -249,16 +249,44 @@
 
 
 
-var newArray = [];
-function allIndexesOf(array, value) {
-    for(var i = 0; i < array.length; i++){
-        if(value === array[i]){
-          newArray.push(i);
-        }
-    } console.log(newArray)
+// var newArray = [];
+// function allIndexesOf(array, value) {
+//     for(var i = 0; i < array.length; i++){
+//         if(value === array[i]){
+//           newArray.push(i);
+//         }
+//     } console.log(newArray)
+// }
+//
+// allIndexesOf(['apple', 'banana', 'orange', 'apple', 'pineapple'], 'apple')
+
+// function removeAll(array, value) {
+//     for(var i = 0; i < array.length; i++){
+//         if(array[i] === value){
+//             array.splice(i, 1);
+//             i--;
+//         }
+//     } console.log(array);
+// }
+//
+// removeAll(["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"], 'mosquito');
+//
+// function randomIntBetween(x, y) {
+//     x = Math.ceil(x);
+//     y = Math.floor(y);
+//     return Math.floor(Math.random() * (y - x + 1)) + x;
+// }
+//
+// console.log(randomIntBetween(11, 100))
+
+function coinFlip(){
+    var coin = Math.round(Math.random());
+    if(coin === 0){
+        console.log("Tails")
+    } else {
+        console.log("Heads")
+    }
 }
 
-allIndexesOf(['apple', 'banana', 'orange', 'apple', 'pineapple'], 'apple')
-
-
+coinFlip();
 
