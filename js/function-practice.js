@@ -279,14 +279,22 @@
 //
 // console.log(randomIntBetween(11, 100))
 
-function coinFlip(){
-    var coin = Math.round(Math.random());
-    if(coin === 0){
-        console.log("Tails")
-    } else {
-        console.log("Heads")
-    }
+// function coinFlip(){
+//     var coin = Math.round(Math.random());
+//     if(coin === 0){
+//         console.log("Tails")
+//     } else {
+//         console.log("Heads")
+//     }
+// }
+//
+// coinFlip();
+
+
+function twoDice() {
+    var diceOne = Math.floor(Math.random() * 6) +1;
+    var diceTwo = Math.floor(Math.random() * 6) + 1;
+    console.log(diceOne);
+    console.log(diceTwo)
 }
-
-coinFlip();
-
+twoDice();
