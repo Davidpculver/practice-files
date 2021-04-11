@@ -291,10 +291,27 @@
 // coinFlip();
 
 
-function twoDice() {
-    var diceOne = Math.floor(Math.random() * 6) +1;
-    var diceTwo = Math.floor(Math.random() * 6) + 1;
-    console.log(diceOne);
-    console.log(diceTwo)
-}
-twoDice();
+// function twoDice() {
+//     var diceOne = Math.floor(Math.random() * 6) +1;
+//     var diceTwo = Math.floor(Math.random() * 6) + 1;
+//     console.log("Dice one " + diceOne + " plus dice two "  + diceTwo + " = " + (diceOne + diceTwo));
+// }
+// twoDice();
+//
+// function twentySidedDie() {
+//     return Math.floor(Math.random() * 20) + 1;
+// }
+//
+// console.log(twentySidedDie());
+
+// function twelveSidedDie() {
+//     return Math.floor(Math.random() * 12) + 1;
+// }
+//
+// console.log(twelveSidedDie());
+
+// function tetrahedron() {
+//     return Math.floor(Math.random() * 4) + 1;
+// }
+//
+// console.log(tetrahedron());
