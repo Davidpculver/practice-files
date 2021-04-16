@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 1em;
+}
+
+.alert-info {
+    display: none;
+}
+
+h1 {
+    display: inline-block;
+    float: left;
+    padding-top: 1em;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    width: 225px;
+    padding-top: 3em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header-img img {
+    margin: 2.5em 0;
+    width: 100%;
+}
+
+.main {
+    width: 65%;
+    float: left;
+}
+
+h2 {
+    padding-bottom: 1.5em;
+}
+
+.sub-section {
+    width: 30%;
+    float: right;
+    margin-bottom: 15em;
+    font-style: italic;
+}
+
+footer p{
+    clear: both;
+    position: absolute;
+    bottom: 4em;
+}

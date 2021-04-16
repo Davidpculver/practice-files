@@ -259,17 +259,17 @@
 // }
 //
 // allIndexesOf(['apple', 'banana', 'orange', 'apple', 'pineapple'], 'apple')
-
-function removeAll(array, value) {
-    for(var i = 0; i < array.length; i++){
-        if(array[i] === value){
-            array.splice(i, 1);
-            i--;
-        }
-    } console.log(array);
-}
-
-removeAll(["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"], 'scorpion');
+//
+// function removeAll(array, value) {
+//     for(var i = 0; i < array.length; i++){
+//         if(array[i] === value){
+//             array.splice(i, 1);
+//             i--;
+//         }
+//     } console.log(array);
+// }
+//
+// removeAll(["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "reference error", "type error"], 'scorpion');
 //
 // function randomIntBetween(x, y) {
 //     x = Math.ceil(x);
@@ -315,3 +315,7 @@ removeAll(["mosquito", "ant", "scorpion", "ant", "ant", "mosquito", "typo", "ref
 // }
 //
 // console.log(tetrahedron());
+
+function rollDie() {
+    return Math.floor(Math.random() *);
+}
