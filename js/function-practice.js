@@ -304,18 +304,40 @@
 //
 // console.log(twentySidedDie());
 
-// function twelveSidedDie() {
-//     return Math.floor(Math.random() * 12) + 1;
-// }
+function twelveSidedDie() {
+    return Math.floor(Math.random() * 12) + 1;
+}
 //
 // console.log(twelveSidedDie());
 
-// function tetrahedron() {
-//     return Math.floor(Math.random() * 4) + 1;
-// }
+function tetrahedron() {
+    return Math.floor(Math.random() * 4) + 1;
+}
 //
 // console.log(tetrahedron());
 
 function rollDie() {
-    return Math.floor(Math.random() *);
+    return Math.floor(Math.random() * 6 ) + 1;
 }
+
+
+// function listOfRolls(num) {
+//     var rolls = [];
+//     for(var i = 0; i < num; i++){
+//         rolls.push(rollDie());
+//     }
+//     console.log(rolls);
+// }
+//
+// listOfRolls(10);
+
+
+function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
+    var rolled = [];
+    for(var i = 0; i < numberOfRolls; i++){
+        rolled.push(diceFunction);
+    }
+    console.log(rolled);
+}
+
+listOfRollsFromDieFunc(3, rollDie());
