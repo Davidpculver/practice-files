@@ -335,7 +335,8 @@ function rollDie() {
 function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
     var rolled = [];
     for(var i = 0; i < numberOfRolls; i++){
-        rolled.push(diceFunction);
+        var roll = diceFunction;
+        rolled.push(roll);
     }
     console.log(rolled);
 }
