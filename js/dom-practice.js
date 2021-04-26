@@ -26,10 +26,17 @@
 // cancel.addEventListener('click', cancelColor);
 
 
+var randomColor = function () {
+    var r = Math.floor(Math.random()* 256);
+    var g = Math.floor(Math.random()* 256);
+    var b = Math.floor(Math.random()* 256);
+    return (`rgb(${r},${g},${b})`);
+}
+
 
 
 var changeColor = function () {
-    document.querySelector('h1').style.color = 'red';
+    document.querySelector('h1').style.backgroundColor = randomColor();
 }
 
 var change = document.getElementById('welcome-btn');
@@ -42,3 +49,4 @@ var removeColor = function () {
 
 var remove = document.getElementById('cancel-btn');
 remove.addEventListener('click', removeColor);
+
