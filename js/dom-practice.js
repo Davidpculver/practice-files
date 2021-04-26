@@ -42,6 +42,11 @@ var changeColor = function () {
 var change = document.getElementById('welcome-btn');
 change.addEventListener('click', changeColor);
 
+change.addEventListener('mouseover', function () {
+    document.querySelector('h1').style.color = randomColor();
+})
+
+
 var removeColor = function () {
     change.removeEventListener('click', changeColor);
     document.querySelector('h1').style.color = 'black';
@@ -49,4 +54,6 @@ var removeColor = function () {
 
 var remove = document.getElementById('cancel-btn');
 remove.addEventListener('click', removeColor);
+
+
 
