@@ -19,11 +19,14 @@ main {
     margin-top: 5px;
     margin-left: 5px;
     padding-top: 2px;
-    align-self: flex-end;
+    /*align-self: flex-end;*/
 }
 
 #coffees {
     background-color: #d9bcac;
-    padding-left: 2em;
-    padding-top: 1em;
+    padding: 1em 1em;
+}
+
+#coffeesContainer {
+    margin-left: 5em;
 }
