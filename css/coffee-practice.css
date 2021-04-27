@@ -1,3 +1,14 @@
-body {
-    background: url;
+h1 {
+    text-align: center;
+}
+
+main {
+    margin-top: 5em
+}
+
+#coffees p {
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-top: 2px;
+    align-self: flex-end;
 }

@@ -1,20 +1,10 @@
 "use strict"
 
-// function renderCoffee(coffee) {
-//     var html = '<tr class="coffee">';
-//     html += '<td>' + coffee.id + '</td>';
-//     html += '<td>' + coffee.name + '</td>';
-//     html += '<td>' + coffee.roast + '</td>';
-//     html += '</tr>';
-//
-//     return html;
-//
-// }
 
 function renderCoffee(coffee) {
     var html = '<div class="d-flex">';
     html += '<h3>' + coffee.name + '</h3>';
-    html += '<p class="roastName text-secondary" style="margin-top: 5px; margin-left: 5px; padding-top: 2px; align-self: flex-end;">' + coffee.roast + '</p>';
+    html += '<p class="roastName text-secondary">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
 }
@@ -26,18 +16,6 @@ function sortCoffee(coffees) {
     }
     return html;
 }
-
-// function updateCoffees(e) {
-//     e.preventDefault(); // don't submit the form, we just want to update the data
-//     var selectedRoast = roastSelection.value;
-//     var filteredCoffees = [];
-//     coffees.forEach(function(coffee) {
-//         if (coffee.roast === selectedRoast) {
-//             filteredCoffees.push(coffee);
-//         }
-//     });
-//     tbody.innerHTML = sortCoffee(filteredCoffees);
-// }
 
 
 function updateCoffees(e) {
@@ -57,8 +35,6 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = sortCoffee(filteredCoffees);
 }
-
-
 
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -83,19 +59,19 @@ var coffees = [
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+var input = document.querySelector("#input")
 
 tbody.innerHTML = sortCoffee(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
-let message = document.querySelector('.form-control');
-let result = document.querySelector('#result');
 
-// message.addEventListener('keydown', function (e) {
-//     // result.textContent = this.value;
-//     for(var i = 0; i < coffees.length; i++){
-//         if(e.key === coffees[i].roast[0]){
-//             document.
-//         }
-//     }
-// });
+input.addEventListener('input', function () {
+    var list = '';
+    coffees.forEach(function(coffee) {
+        if(coffee.name.toLowerCase().includes(input.value.toLowerCase())) {
+            list += renderCoffee(coffee);
+        } tbody.innerHTML = list;
+    });
+})
+
