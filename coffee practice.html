@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title></title>
+</head>
+<body class="container-fluid">
+<div class="c" id="EntirePage">
+
+    <div>
+        <h1 style="text-align: center">Coffee!</h1>
+        <form>
+            <label for="roast-selection"></label>
+            <select id="roast-selection">
+                <option>light</option>
+                <option>medium</option>
+                <option>dark</option>
+            </select>
+            <input id="submit" type="submit"/>
+        </form>
+
+        <form>
+            <div class="input-group">
+                <label class="Search-Coffee">
+                    <input id="input" type="text" class="form-control" placeholder="Search Coffee">
+                </label>
+                <input id="submitbtn" type="submit" value="Find"/>
+            </div>
+        </form>
+
+    </div>
+
+    <p id="result"></p>
+
+
+    <!--    <table>-->
+    <!--        <thead>-->
+    <!--        <tr>-->
+    <!--            <th>ID</th>-->
+    <!--            <th>NAME</th>-->
+    <!--            <th>ROAST</th>-->
+    <!--        </tr>-->
+    <!--        </thead>-->
+    <!--        <tbody id="coffees"></tbody>-->
+    <!--    </table>-->
+    <div class="container">
+        <div class="col-6 align-bottom" id="coffees"></div>
+    </div>
+
+
+    <script src="js/coffee%20practice.js"></script>
+</div>
+
+
+</body>
+</html>
