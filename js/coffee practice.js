@@ -1,6 +1,6 @@
 "use strict"
 
-
+//appends to the html page
 function renderCoffee(coffee) {
     var html = '<div class="d-flex">';
     html += '<h3>' + coffee.name + '</h3>';
@@ -8,6 +8,7 @@ function renderCoffee(coffee) {
     html += '</div>';
     return html;
 }
+
 
 function sortCoffee(coffees) {
     var html = '';
@@ -65,7 +66,7 @@ tbody.innerHTML = sortCoffee(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
 
-
+//adds functionality to suggest options as user inputs characters into the search bar
 input.addEventListener('input', function () {
     var list = '';
     coffees.forEach(function(coffee) {
