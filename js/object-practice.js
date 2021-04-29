@@ -65,33 +65,33 @@
 //
 // filterNumbers([100, "puppy" , 10000, , true, 1]);
 
-// var dogs = [
-//     {
-//         name: "Chompers",
-//         breed: "Pug",
-//         age: 7
-//     },
-//     {
-//         name: "Freddy",
-//         breed: "Lab",
-//         age: 4
-//     },
-//     {
-//         name: "Mr. Pig",
-//         breed: "Mastif",
-//         age: 10
-//     }
-// ]
-//
-// function getOlder() {
-//     dogs.forEach(function (dogAge) {
-//        dogAge.age = dogAge.age + 1;
-//         console.log(dogAge);
-//     })
-//
-// }
-//
-// getOlder();
+var dogs = [
+    {
+        name: "Chompers",
+        breed: "Pug",
+        age: 7
+    },
+    {
+        name: "Freddy",
+        breed: "Lab",
+        age: 4
+    },
+    {
+        name: "Mr. Pig",
+        breed: "Mastif",
+        age: 10
+    }
+]
+
+function getOlder() {
+    dogs.forEach(function (dogAge) {
+       dogAge.age = dogAge.age + 1;
+        console.log(dogAge);
+    })
+
+}
+
+getOlder();
 
 var cars = [
     {
