@@ -76,3 +76,19 @@ input.addEventListener('input', function () {
     });
 })
 
+
+//add coffee
+var addCoffee = document.querySelector('#addCoffee');
+var addRoast = document.querySelector('#addRoast')
+var submitNew = document.querySelector('#submitNew');
+submitNew.addEventListener('click', function () {
+    coffees.push({
+        id: 15,
+        name: addCoffee.value,
+        roast: addRoast.value
+    });
+
+    console.log(coffees)
+    tbody.innerHTML = sortCoffee(coffees);
+});
+
