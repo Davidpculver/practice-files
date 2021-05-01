@@ -45,44 +45,68 @@
     </div>
 </nav>
 
-<main>
-    <div class="container" id="heading">
-        <h1>Brewmasters Coffee</h1>
-        <div class="d-flex justify-content-center">
-            <div id="carouselExampleInterval" class="carousel slide justify-items-center" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="5000">
-                        <img src="images/coffee-beans.jpeg" class="d-block w-100 coffeeImage" alt="...">
-                        <div class="carousel-caption mt-10">
-                            <p class="caption">We only use the highest quality coffee beans.</p>
+<main class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <h2>Select your coffee</h2>
+                <div class="container">
+                    <div class="row">
+                        <!--Search for coffee-->
+                        <form class="col">
+                            <label class="Search-Coffee">Coffee name</label>
+                            <input id="input" type="text" placeholder="Search Coffee">
+
+                        </form>
+                        <!--Roast dropdown-->
+                        <form class="col">
+                            <label for="roast-selection">Select Roast</label>
+                            <select id="roast-selection">
+                                <option>all</option>
+                                <option>light</option>
+                                <option>medium</option>
+                                <option>dark</option>
+                            </select>
+                        </form>
+                        <div class="container">
+                            <div class="row">
+                                <input class="btn btn-primary justify-content-flex-end" id="submit" type="submit"/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-item" data-interval="5000">
-                        <img src="images/coffee-farm.jpeg" class="d-block w-100 coffeeImage" alt="...">
-                        <div class="carousel-caption">
-                            <p class="caption">Our coffee is trade free and organic.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-interval="5000">
-                        <img src="images/freshcoffee.jpeg" class="d-block w-100 coffeeImage" alt="...">
-                        <div class="carousel-caption">
-                            <p class="caption">Freshness is guaranteed.</p>
-                        </div>
+
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
     </div>
-</main>
 
+    <!--add coffee-->
+    <form name="adds" class="form" id="adds">
+        <h3>Add Coffee</h3>
+        <div class="input-group">
+            <input type="text" name="addCoffee" id="addCoffee"
+                   aria-label="Text input with dropdown button"
+                   placeholder="Enter Coffee Name">
+
+            <select id="addRoast">
+                <option value="" disabled selected>Select a Roast</option>
+                <option value="light">Light</option>
+                <option value="medium">Medium</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <button class="formRoast" type="button" id="submitNew" onclick="">Submit</button>
+    </form>
+
+    <!--container for list of coffees-->
+
+    <div class="row d-flex" id="coffeesContainer">
+        <div class="col d-flex">
+            <div class="align-bottom" id="coffees"></div>
+        </div>
+    </div>
+
+</main>
 
 
 <script src="js/coffee%20practice.js"></script>
@@ -92,6 +116,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-
 </body>
 </html>
