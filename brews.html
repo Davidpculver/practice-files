@@ -45,40 +45,52 @@
     </div>
 </nav>
 
-<main class="row">
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <h2>Select your coffee</h2>
-                <div class="container">
-                    <div class="row">
-                        <!--Search for coffee-->
-                        <form class="col">
-                            <label class="Search-Coffee">Coffee name</label>
-                            <input id="input" type="text" placeholder="Search Coffee">
+<main class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body text-center" style="padding: 20px 0px">
+                    <h2>Select your coffee</h2>
+                    <div class="container">
+                        <div class="row">
+                            <!--Search for coffee-->
+                            <form class="col-7">
+                                <label class="Search-Coffee">Coffee name</label>
+                                <input id="input" type="text" placeholder="Search Coffee">
 
-                        </form>
-                        <!--Roast dropdown-->
-                        <form class="col">
-                            <label for="roast-selection">Select Roast</label>
-                            <select id="roast-selection">
-                                <option>all</option>
-                                <option>light</option>
-                                <option>medium</option>
-                                <option>dark</option>
-                            </select>
-                        </form>
-                        <div class="container">
-                            <div class="row">
-                                <input class="btn btn-primary justify-content-flex-end" id="submit" type="submit"/>
+                            </form>
+                            <!--Roast dropdown-->
+                            <form class="col-5">
+                                <label for="roast-selection">Select Roast</label>
+                                <select id="roast-selection">
+                                    <option>all</option>
+                                    <option>light</option>
+                                    <option>medium</option>
+                                    <option>dark</option>
+                                </select>
+                            </form>
+                            <div class="container">
+                                <div class="col-12">
+                                    <button class="btn btn-secondary justify-content-flex-end" id="submit"
+                                            type="submit">
+                                        Button
+                                    </button>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--container for list of coffees-->
+    <div class="row" style="margin-right: 0;">
+        <div class="col-12" id="coffeesContainer" style="margin: 1em;">
+            <div class="align-bottom" id="coffees"></div>
+        </div>
+    </div>
+
 
     <!--add coffee-->
     <form name="adds" class="form" id="adds">
@@ -97,14 +109,8 @@
         </div>
         <button class="formRoast" type="button" id="submitNew" onclick="">Submit</button>
     </form>
-
-    <!--container for list of coffees-->
-
-    <div class="row d-flex" id="coffeesContainer">
-        <div class="col d-flex">
-            <div class="align-bottom" id="coffees"></div>
-        </div>
     </div>
+
 
 </main>
 

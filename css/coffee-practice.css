@@ -72,15 +72,29 @@ main {
     margin: 0;
 }
 
+#submit {
+    margin-top: 1em;
+}
+
+#submit:hover {
+    background-color: whitesmoke;
+    color: gray;
+}
+
+#coffeesContainer {
+    margin-left: 0;
+    background-color: #d9bcac;
+    display: flex;
+}
+
 #coffees p {
     margin-top: 5px;
     margin-left: 5px;
     padding-top: 2px;
-    /*align-self: flex-end;*/
 }
 
 #coffees {
-    background-color: #d9bcac;
+
     padding: 1em 1em;
 }
 
