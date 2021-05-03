@@ -2,7 +2,7 @@
 
 //appends to the html page
 function renderCoffee(coffee) {
-    var html = '<div class="d-flex">';
+    var html = '<div class="col-6 d-flex">';
     html += '<h3>' + coffee.name + '</h3>';
     html += '<p class="roastName text-secondary">' + coffee.roast + '</p>';
     html += '</div>';
