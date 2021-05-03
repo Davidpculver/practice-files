@@ -50,7 +50,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body text-center" style="padding: 20px 0px">
-                    <h2>Select your coffee</h2>
+                    <h2> Please select a coffee</h2>
                     <div class="container">
                         <div class="row">
                             <!--Search for coffee-->
@@ -73,7 +73,7 @@
                                 <div class="col-12">
                                     <button class="btn btn-secondary justify-content-flex-end" id="submit"
                                             type="submit">
-                                        Button
+                                        Find my brew
                                     </button>
                                 </div>
                             </div>
@@ -85,30 +85,39 @@
         </div>
     </div>
     <!--container for list of coffees-->
-    <div>
-        <div class="d-flex" id="coffeesContainer" style="margin-top: 1em; margin-left: 0; width: 100%">
-            <div class="row" id="coffees" style="width: 100%; flex-wrap: wrap"></div>
-        </div>
+
+    <div class="d-flex" id="coffeesContainer" style="margin-top: 1em; margin-left: 0; width: 100%">
+        <div class="row" id="coffees" style="width: 100%; flex-wrap: wrap"></div>
     </div>
 
 
     <!--add coffee-->
-    <form name="adds" class="form" id="adds">
-        <h3>Add Coffee</h3>
-        <div class="input-group">
-            <input type="text" name="addCoffee" id="addCoffee"
-                   aria-label="Text input with dropdown button"
-                   placeholder="Enter Coffee Name">
-
-            <select id="addRoast">
-                <option value="" disabled selected>Select a Roast</option>
-                <option value="light">Light</option>
-                <option value="medium">Medium</option>
-                <option value="dark">Dark</option>
-            </select>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="background-color: whitesmoke; padding:0; border-radius: 5px; margin-top: 1em">
+                <div class="card">
+                    <div class="card-body text-center" style="padding: 20px 0px">
+                        <h3>Add Coffee</h3>
+                        <div class="container" style="border: 1px solid red">
+                            <form name="adds" class="form" id="adds" style="border: 1px solid blue">
+                                <div class="input-group">
+                                    <input type="text" name="addCoffee" id="addCoffee"
+                                           aria-label="Text input with dropdown button"
+                                           placeholder="Enter Coffee Name">
+                                    <select id="addRoast">
+                                        <option value="" disabled selected>Select a Roast</option>
+                                        <option value="light">Light</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="dark">Dark</option>
+                                    </select>
+                                </div>
+                                <button class="formRoast" type="button" id="submitNew" onclick="">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <button class="formRoast" type="button" id="submitNew" onclick="">Submit</button>
-    </form>
     </div>
 
 
