@@ -76,6 +76,10 @@ input.addEventListener('input', function () {
     });
 })
 
+$('#coffeeSearch').click(function () {
+    $("#coffeeList").toggleClass('showSearch');
+})
+
 
 //add coffee
 var addCoffee = document.querySelector('#addCoffee');
