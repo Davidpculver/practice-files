@@ -304,15 +304,15 @@
 //
 // console.log(twentySidedDie());
 
-function twelveSidedDie() {
-    return Math.floor(Math.random() * 12) + 1;
-}
+// function twelveSidedDie() {
+//     return Math.floor(Math.random() * 12) + 1;
+// }
+// //
+// // console.log(twelveSidedDie());
 //
-// console.log(twelveSidedDie());
-
-function tetrahedron() {
-    return Math.floor(Math.random() * 4) + 1;
-}
+// function tetrahedron() {
+//     return Math.floor(Math.random() * 4) + 1;
+// }
 //
 // console.log(tetrahedron());
 
@@ -332,13 +332,40 @@ function rollDie() {
 // listOfRolls(10);
 
 
-function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
+// function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
+//     var rolled = [];
+//     for(var i = 0; i < numberOfRolls; i++){
+//         // var roll = diceFunction.valueOf();
+//         var roll = diceFunction;
+//         rolled.push(roll)
+//         // console.log(roll)
+//         // rolled.push(roll);
+//     }
+//     console.log(rolled);
+// }
+//
+// listOfRollsFromDieFunc(3, rollDie());
+
+
+function listOfRollsFromDieFunc(numberOfRolls) {
     var rolled = [];
     for(var i = 0; i < numberOfRolls; i++){
-        var roll = diceFunction;
+        var roll = rollDie();
         rolled.push(roll);
     }
     console.log(rolled);
 }
 
-listOfRollsFromDieFunc(3, rollDie());
+
+
+// let listOfRollsFromDieFunc = numberOfRolls => {
+//     var rolled = [];
+//     for(var i = 0; i < numberOfRolls; i++){
+//         var roll = rollDie();
+//         rolled.push(roll);
+//     }
+//     console.log(rolled);
+// }
+
+
+listOfRollsFromDieFunc(3);
