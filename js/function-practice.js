@@ -369,3 +369,16 @@ function listOfRollsFromDieFunc(numberOfRolls) {
 
 
 listOfRollsFromDieFunc(3);
+
+function removeVowels(str) {
+    let splitStr = str.split('');
+    let noVowels = [];
+    for(let i = 0; i < str.length; i++){
+        if(splitStr[i].toLowerCase() != 'a' && splitStr[i].toLowerCase() != 'e' && splitStr[i].toLowerCase() != 'i' && splitStr[i].toLowerCase() != 'o' && splitStr[i].toLowerCase() != 'u') {
+            noVowels.push(splitStr[i]);
+        }
+    }
+    return noVowels.join('');
+}
+
+console.log(removeVowels("This is a test and only a test."));
